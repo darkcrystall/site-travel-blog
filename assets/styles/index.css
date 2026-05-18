@@ -15,7 +15,6 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -26,18 +25,29 @@ header {
 }
 
 .header-top {
+    display: flex;
+    justify-content: space-between;
     font-family: "Crimson Text", monospace;
     font-style: italic;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff;
     position: relative;
-    display: inline-block;
     width: 100%;
     height: 40px;
     font-size: 1em;
     margin: 0px 60px;
 }
 
-.link a {
+.header-top div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.headee-bottom {
+    display: flex;
+}
+
+header a {
     text-decoration: none;
     color: #ffffff;
 }
