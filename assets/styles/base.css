@@ -1,0 +1,37 @@
+/* fontes */
+@font-face {
+  font-family: "Muli-Regular";
+  src: url("../fonts/Muli-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Crimson-Text-Italic";
+  src: url("../fonts/CrimsonText-Italic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+    font-family: "Oswald-Semibold";
+    src: url("../fonts/Oswald-SemiBold.ttf");
+    font-weight: 600;
+    font-style: normal;
+}
+/* variáveis */
+:root {
+  --white-color: #ffffff;
+  --gray-color: #878787;
+  --opaque-gray: #ffffff80;
+  --green-color: #59815b;
+  --muli-regular: "Muli-Regular", sans-serif;
+  --crimson-italic: "Crimson-Text-Italic", sans-serif;
+  --oswald-semibold: "Oswald-Semibold", sans-serif;
+}
+/* corpo da página */
+body {
+  font-family: var(--muli-regular);
+  font-size: 16px;
+  line-height: 26px;
+  background-color: var(--white-color);
+  color: var(--gray-color);
+}

@@ -1,0 +1,70 @@
+.slider.header-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .description {
+  display: inline-block;
+  height: 10px;
+  width: 100%;
+}
+/* container que engloba o cabeçalho */
+.header-carousel {
+  position: relative;
+  background: url("../images/hc-background/background-1.jpg");
+  height: 100vh;
+  width: 100%;
+}
+/* container dos cabeçalhos */
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--opaque-gray);
+  color: var(--white-color);
+  margin: 0 60px;
+  font-size: 1em;
+}
+/* header de cima */
+.header-top {
+  font-family: var(--crimson-italic);
+  height: 40px;
+}
+/* header de baixo */
+.header-bottom {
+  font-family: var(--oswald-semibold);
+  text-transform: uppercase;
+  height: 110px;
+}
+/* todo footer */
+footer {
+  color: #b9b9b9;
+}
+/* footer que é uma grade (colunas) */
+
+/* footer que enfloba o top e o grid */
+.footer-grid-top {
+display: flex;
+justify-content: space-between;
+align-items: center;
+  background-color: #242625;
+  height: 50%;
+}
+/* footer parte de baixo */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #111111;
+}
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}

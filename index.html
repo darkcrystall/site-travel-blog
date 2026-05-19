@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wanderland – Travel Blog</title>
     <!-- estilos -->
-    <link rel="stylesheet" href="./assets/styles/reset.css" />
-    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
     <!-- ícone da página -->
     <link
       rel="shortcut icon"
@@ -18,18 +17,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
     />
-    <!-- fontes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Oswald:wght@200..700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="container header-carousel">
+    <div class="header-carousel active">
       <header>
-        <div class="header-top">
+        <div class="container-header header-top">
           <div class="box phone-email">
             <div class="link phone">
               <a href="tel:+12345677789" target="_blank">
@@ -76,16 +68,14 @@
             </div>
           </div>
         </div>
-        <div class="header-bottom">
+        <div class="container-header header-bottom">
+          <button class="nav-destination-list">
+            <a href="https://wanderland.qodeinteractive.com/destination-list/">
+              <i class="fa-regular fa-map"></i>
+              <span>Destinations</span>
+            </a>
+          </button>
           <nav class="left-menu">
-            <li class="menu-item destinations-list">
-              <a
-                href="https://wanderland.qodeinteractive.com/destination-list/"
-              >
-                <i class="fa-regular fa-map"></i>
-                <span>Destinations</span>
-              </a>
-            </li>
             <li class="menu-item home">
               <a href="#">Home</a>
               <ul class="submenu">
@@ -119,7 +109,10 @@
             </li>
           </nav>
           <a href="#" class="header-logo">
-            <img src="./assets/images/logo/white-logo.png" alt="" />
+            <img
+              src="./assets/images/logo/light-logo.png"
+              alt="Wanderland Light Logo"
+            />
           </a>
 
           <nav class="right-menu">
@@ -154,64 +147,120 @@
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
-      </header>
-    </div>
-    <main>
-
-    </main>
-    <footer>
-      <div class="footer-top">
-        <div class="footer-grid">
-          <div>
-            <div class="footer-logo">
-              <img src="./assets/images/logo/green-logo.png" alt="" />
-            </div>
-            <p class="footer-desc">
-              Based in Utah, USA, Wanderland is a blog by Markus Thompson. His
-              posts explore outdoor experiences through photos and diaries with
-              tips & tricks.
-            </p>
-          </div>
-
-          <div>
-            <div class="footer-col-title">About the Blog</div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod mas.
-            </p>
-          </div>
-
-          <div>
-            <div class="footer-col-title">Recent News</div>
-            <div class="footer-news-item">
-              <span class="footer-news-date">October 2, 2019</span>
-              <a href="#" class="footer-news-title">Trip to Iceland</a>
-            </div>
-            <div class="footer-news-item">
-              <span class="footer-news-date">October 2, 2019</span>
-              <a href="#" class="footer-news-title"
-                >On the Shores of a Vanishing Island in India</a
-              >
-            </div>
-            <div class="footer-news-item">
-              <span class="footer-news-date">October 2, 2019</span>
-              <a href="#" class="footer-news-title">Visiting Rabat</a>
-            </div>
-          </div>
-
-          <div>
-            <div class="footer-col-title">Subscribe to Newsletter</div>
-            <form action="">
-              <div class="footer-newsletter-form">
-                <input type="text" placeholder="Your name..." />
-                <input type="email" placeholder="Your email..." />
-                <button type="submit"><span>Subscribe</span>></button>
+        <div class="slider header-carousel active">
+          <div class="slider content">
+            <div class="slider description-content">
+              <div class="description date-content">
+                <i class="fa-solid fa-calendar"></i>
+                <span>October 11, 2019</span>
               </div>
-            </form>
+              <div class="description author-content">
+                <i class="fa-solid fa-pen fa-rotate-270"></i>
+                <span>by Alisa Michaels</span>
+              </div>
+            </div>
+            <a
+              class="title-slider"
+              href="https://wanderland.qodeinteractive.com/everyday-urban-concrete-jungle/"
+            >
+              <h1>Everyday urban concrete jungle</h1>
+            </a>
+            <div class="description-slider">
+              <p class="description-text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis
+                eius similique facere, nostrum explicabo molestiae officia.
+                Assumenda provident voluptates rem, ut nulla architecto sit
+                nihil unde in, commodi, facilis laudantium.
+              </p>
+            </div>
+            <a
+              class="button-slider link"
+              href="https://wanderland.qodeinteractive.com/everyday-urban-concrete-jungle/"
+              target="_self"
+            >
+              <i class="fa-solid fa-up-right-from-square"></i>
+              <span>Read More</span>
+            </a>
           </div>
         </div>
+      </header>
+      <!-- <div class="bottom-detail">
+        <img src="./assets/images/details/hc-bottom-detail.png" alt="" />
+      </div> -->
+    </div>
+    <main>
+      <div class="sponsors">
+        <a href="#">
+          <div class="sponsor">
+            <img src="./assets/images/sponsors/sponsors-1.png" alt="" /></div
+        ></a>
+        <div class="sponsor">
+          <img src="./assets/images/sponsors/sponsors-2.png" alt="" />
+        </div>
+        <div class="sponsor">
+          <img src="./assets/images/sponsors/sponsors-3.png" alt="" />
+        </div>
+        <div class="sponsor">
+          <img src="./assets/images/sponsors/sponsors-4.png" alt="" />
+        </div>
+        <div class="sponsor">
+          <img src="./assets/images/sponsors/sponsors-5.png" alt="" />
+        </div>
       </div>
+    </main>
+    <footer>
+      <div class="footer-grid-top">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">
+            <img src="./assets/images/logo/green-logo.png" alt="" />
+          </div>
+          <p class="footer-desc">
+            Based in Utah, USA, Wanderland is a blog by Markus Thompson. His
+            posts explore outdoor experiences through photos and diaries with
+            tips & tricks.
+          </p>
+        </div>
+      </div>
+      <div class="footer-grid">
+        <div>
+          <div class="footer-col-title">About the Blog</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod mas.
+          </p>
+        </div>
 
+        <div>
+          <div class="footer-col-title">Recent News</div>
+          <div class="footer-news-item">
+            <span class="footer-news-date">October 2, 2019</span>
+            <a href="#" class="footer-news-title">Trip to Iceland</a>
+          </div>
+          <div class="footer-news-item">
+            <span class="footer-news-date">October 2, 2019</span>
+            <a href="#" class="footer-news-title"
+              >On the Shores of a Vanishing Island in India</a
+            >
+          </div>
+          <div class="footer-news-item">
+            <span class="footer-news-date">October 2, 2019</span>
+            <a href="#" class="footer-news-title">Visiting Rabat</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Subscribe to Newsletter</div>
+          <form action="">
+            <div class="footer-newsletter-form">
+              <input type="text" placeholder="Your name..." />
+              <input type="email" placeholder="Your email..." />
+              <button type="submit"><span>Subscribe</span></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
       <div class="footer-bottom">
         <div class="footer socials">
           <h2>Socials</h2>
