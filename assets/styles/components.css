@@ -1,26 +1,54 @@
-/* header components */
-.header-logo img {
+/* componentes reutilizáveis */
+/* logos com altura fixa */
+.logo img {
   height: 76px;
-  width: 126px;
+  width: auto;
 }
-
-header li {
-  display: inline-block;
-}
-/* .bottom-detail {
-    position: absolute;
-    bottom: 0;
-} */
-
-.header-top i {
-  font-size: 0.8em;
-}
-/* socials link */
-.socials h2 {
+/* título dos links sociais */
+.header-socials h2, .footer-socials h2 {
   display: inline;
   font-family: var(--crimson-italic);
   font-size: 0.9em;
 }
+.header-contacts a { 
+  margin: 0 10px;
+}
+.header-contacts i {
+  margin: 0 5px;
+}
+/* links do nav */
+.nav-link {
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0 14px;
+  transition: color 1s ease;
+  position: relative;
+}
+.nav-link:hover { 
+  color: var(--green);
+  background-color: var(--white);
+}
+/* botões que ficam nas laterais */
+.btn-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: opacity 1s;
+}
+.btn-nav:hover { opacity: 0.7; }
+/* */
+header li {
+  display: inline-block;
+}
+
+
+.header-top i {
+  font-size: 0.8em;
+}
+
 
 .header.socials {
   color: #ffffff;
@@ -70,4 +98,9 @@ header a {
 
 .rights-highlight {
   color: #999999;
+}
+
+/* ícone de seta com rotação */
+.fa-rotate-by {
+  --fa-rotate-angle: -45deg;
 }

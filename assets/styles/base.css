@@ -2,7 +2,7 @@
 @font-face {
   font-family: "Muli-Regular";
   src: url("../fonts/Muli-Regular.ttf") format("truetype");
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -19,19 +19,62 @@
 }
 /* variáveis */
 :root {
-  --white-color: #ffffff;
-  --gray-color: #878787;
-  --opaque-gray: #ffffff80;
-  --green-color: #59815b;
+  --white:       #ffffff;
+  --off-white:   #f5f2ed;
+  --opaque-white: #ffffff80;
+  --dark:        #1a1a1a;
+  --dark-footer: #242625;
+  --darker:      #111111;
+  --gray:        #878787;
+  --light-gray:  #b9b9b9;
+  --green:       #59815b;
+  --green-hover: #476849;
   --muli-regular: "Muli-Regular", sans-serif;
   --crimson-italic: "Crimson-Text-Italic", sans-serif;
   --oswald-semibold: "Oswald-Semibold", sans-serif;
+  --gap: 30px;
 }
 /* corpo da página */
 body {
   font-family: var(--muli-regular);
-  font-size: 16px;
-  line-height: 26px;
-  background-color: var(--white-color);
-  color: var(--gray-color);
+  font-size: 18px;
+  line-height: 1.7;
+  background-color: var(--white);
+  color: var(--gray);
+}
+h1 {
+  font-family: var(--oswald-semibold);
+  color: var(--dark);
+  line-height: 1.2;
+}
+/* títulos das seções */
+.section-title {
+  font-family: var(--oswald-semibold);
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--dark);
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-title .accent {
+  color: var(--green);
+}
+/* label pequeno acima dos títulos de seção */
+.section-label {
+  font-family: var(--crimson-italic);
+  font-size: 0.85rem;
+  color: var(--gray);
+  text-align: center;
+  display: block;
+  margin-bottom: 6px;
+}
+/* container centralizado */
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+/* seções com padding vertical padrão */
+.section {
+  padding: 70px 0;
 }

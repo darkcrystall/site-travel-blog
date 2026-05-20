@@ -1,28 +1,65 @@
-.slider.header-carousel {
+/* container que engloba o cabeçalho */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 600px;
+  background: url("../images/hero-background/background-1.jpg");
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.slider-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  color: var(--white);
+  margin: 0 60px;
+}
+/* conteúdo do hero */
+.description-content div {
+  display: inline-block;
+}
+.hero-content h1 {
+  font-family: var(--oswald-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  margin-bottom: 18px;
+}
+.hero > * {
+    position: relative;
+    z-index: 1;
+}
+.hero-content .hero-meta {
   display: flex;
   justify-content: center;
-  align-items: center;
+  gap: 24px;
+  font-family: var(--font-serif);
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.85);
+  margin-bottom: 16px;
 }
 
-.slider .description {
-  display: inline-block;
-  height: 10px;
-  width: 100%;
+.hero-content p {
+  max-width: 560px;
+  margin: 0 auto 28px;
+  color: rgba(255,255,255,0.8);
+  font-size: 0.95rem;
 }
-/* container que engloba o cabeçalho */
-.header-carousel {
-  position: relative;
-  background: url("../images/hc-background/background-1.jpg");
-  height: 100vh;
-  width: 100%;
+.bottom-detail {
+    position: absolute;
+    bottom: 0;
 }
 /* container dos cabeçalhos */
 .container-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid var(--opaque-gray);
-  color: var(--white-color);
+  border-bottom: 1px solid var(--opaque-white);
+  color: var(--white);
   margin: 0 60px;
   font-size: 1em;
 }
@@ -37,6 +74,16 @@
   text-transform: uppercase;
   height: 110px;
 }
+.site-header {
+  display: flex;
+  flex-direction: column;
+}
+.slider .description {
+  display: inline-block;
+  height: 10px;
+  width: 100%;
+}
+
 /* todo footer */
 footer {
   color: #b9b9b9;
