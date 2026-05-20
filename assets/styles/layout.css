@@ -9,14 +9,26 @@
   display: flex;
   flex-direction: column;
 }
+/* todo o cabeçalho */
+.site-header {
+  display: flex;
+  flex-direction: column;
+}
 .slider-hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
+  min-height: 800px;
+  max-width: 100vw;
   flex-direction: row;
   color: var(--white);
   margin: 0 60px;
+}
+.container-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 /* conteúdo do hero */
 .description-content div {
@@ -30,7 +42,6 @@
   margin-bottom: 18px;
 }
 .hero > * {
-    position: relative;
     z-index: 1;
 }
 .hero-content .hero-meta {
@@ -42,16 +53,17 @@
   color: rgba(255,255,255,0.85);
   margin-bottom: 16px;
 }
-
 .hero-content p {
   max-width: 560px;
   margin: 0 auto 28px;
   color: rgba(255,255,255,0.8);
   font-size: 0.95rem;
 }
+/* detalhe que fica embaixo do hero */
 .bottom-detail {
-    position: absolute;
-    bottom: 0;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
 }
 /* container dos cabeçalhos */
 .container-header {
@@ -67,6 +79,7 @@
 .header-top {
   font-family: var(--crimson-italic);
   height: 40px;
+  font-size: 1.2em;
 }
 /* header de baixo */
 .header-bottom {
@@ -74,23 +87,33 @@
   text-transform: uppercase;
   height: 110px;
 }
-.site-header {
+/* container dos patrocinadores */
+.sponsors {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
 }
-.slider .description {
+/* container dos posts */
+.tips-container {
   display: inline-block;
-  height: 10px;
-  width: 100%;
+  padding: 40px;
 }
-
+.tip-card {
+  display: flex;
+  margin-bottom: 30px;
+}
+.tip-card.left-img {
+  flex-direction: row;
+}
+.tip-card.right-img {
+  flex-direction: row-reverse;
+}
 /* todo footer */
 footer {
   color: #b9b9b9;
 }
-/* footer que é uma grade (colunas) */
-
-/* footer que enfloba o top e o grid */
+/* footer que engloba o top e o grid */
 .footer-grid-top {
 display: flex;
 justify-content: space-between;
@@ -107,11 +130,4 @@ align-items: center;
   width: 100%;
   padding: 10px 20px;
   background-color: #111111;
-}
-.sponsors {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: fit-content;
 }

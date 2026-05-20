@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,7 @@
     <!-- ícone da página -->
     <link
       rel="shortcut icon"
-      href="./assets/icon/favicon.jpg"
+      href="./assets/icon/page-icon/favicon.jpg"
       type="image/x-icon"
     />
     <!-- biblioteca de ícones -->
@@ -24,14 +24,18 @@
         <div class="container-header header-top">
           <div class="header-contacts">
             <div>
-              <a href="tel:+12345677789" target="_blank">
-                <i class="fa-solid fa-phone"></i>
+              <i class="fa-solid fa-phone"></i>
+              <a class="btn-header" href="tel:+12345677789" target="_blank">
                 <span>+123 45677 789</span>
               </a>
             </div>
             <div>
-              <a href="mailto:wanderland@qodeinteractive.com" target="_blank">
-                <i class="fa-regular fa-envelope"></i>
+              <i class="fa-regular fa-envelope"></i>
+              <a
+                class="btn-header"
+                href="mailto:wanderland@qodeinteractive.com"
+                target="_blank"
+              >
                 <span>wanderland@qodeinteractive.com</span>
               </a>
             </div>
@@ -40,6 +44,7 @@
             <h2>Socials</h2>
             <div>
               <a
+                class="btn-header"
                 href="https://www.instagram.com/qodeinteractive/"
                 target="_blank"
               >
@@ -47,12 +52,16 @@
               </a>
             </div>
             <div>
-              <a href="https://twitter.com/qodeinteractive/" target="_blank"
+              <a
+                class="btn-header"
+                href="https://twitter.com/qodeinteractive/"
+                target="_blank"
                 ><i class="fa-brands fa-twitter"></i>
               </a>
             </div>
             <div>
               <a
+                class="btn-header"
                 href="https://www.facebook.com/QodeInteractive/"
                 target="_blank"
                 ><i class="fa-brands fa-facebook-f"></i>
@@ -60,6 +69,7 @@
             </div>
             <div>
               <a
+                class="btn-header"
                 href="https://www.youtube.com/QodeInteractiveVideos"
                 target="_blank"
               >
@@ -69,7 +79,7 @@
           </div>
         </div>
         <div class="container-header header-bottom">
-          <button class="btn-nav nav-destination-list">
+          <button class="btn-header nav-destination-list">
             <a href="https://wanderland.qodeinteractive.com/destination-list/">
               <i class="fa-regular fa-map"></i>
               <span>Destinations</span>
@@ -137,276 +147,501 @@
               </ul>
             </li>
             <li class="menu-item landing">
-              <a class="nav-link" href="https://wanderland.qodeinteractive.com/landing/"
+              <a
+                class="nav-link"
+                href="https://wanderland.qodeinteractive.com/landing/"
                 >Landing</a
               >
             </li>
           </nav>
-          <button class="btn-nav nav-search">
+          <button class="btn-header nav-search">
             <span>Search</span>
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
         </div>
         <div class="slider-hero active">
-        <i class="fa-solid fa-arrow-left"></i> 
-        <div class="container-hero">
-          <div class="hero-content">
-            <div class="description-content">
-              <div class="description date-content">
-                <i class="fa-solid fa-calendar"></i>
-                <span>October 11, 2019</span>
-              </div>
-              <div class="description author-content">
-                <i class="fa-solid fa-pen fa-rotate-270"></i>
-                <span>by Alisa Michaels</span>
-              </div>
-            </div>
-            <a
-              class="title-slider"
-              href="https://wanderland.qodeinteractive.com/everyday-urban-concrete-jungle/"
-            >
-              <h1>Everyday urban concrete jungle</h1>
-            </a>
-            <div class="description-slider">
-              <p class="description-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <a
-              class="button-slider link"
-              href="https://wanderland.qodeinteractive.com/everyday-urban-concrete-jungle/"
-              target="_self"
-            >
-              <span>Read More</span>
-              <i class="fa-solid fa-arrow-right fa-rotate-by"></i> 
-            </a>
+          <div id="btn-hero-prev" class="btn-hero">
+            <img
+              class="arrow-black"
+              src="./assets/icon/arrows/thin-arrow/thin-left-arrow-black.png"
+              alt="Arrow Previous"
+            />
+            <img
+              class="arrow-white"
+              src="./assets/icon/arrows/thin-arrow/thin-left-arrow-white.png"
+              alt="Arrow Previous"
+            />
           </div>
+          <div class="container-hero">
+            <div class="hero-content">
+              <div class="description-content">
+                <div class="description date-content">
+                  <i class="fa-solid fa-calendar"></i>
+                  <span>October 11, 2019</span>
+                </div>
+                <div class="description author-content">
+                  <i class="fa-solid fa-pen fa-rotate-270"></i>
+                  <span>by Alisa Michaels</span>
+                </div>
+              </div>
+              <a
+                class="title-slider"
+                href="https://wanderland.qodeinteractive.com/everyday-urban-concrete-jungle/"
+              >
+                <h1 class="section-title">Everyday urban concrete jungle</h1>
+              </a>
+              <div class="description-slider">
+                <p class="description-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+              </div>
+              <a
+                class="button-slider link"
+                href="https://wanderland.qodeinteractive.com/everyday-urban-concrete-jungle/"
+                target="_self"
+              >
+                <div class="btn-container-link black">
+                  <div class="btn-up">
+                    <span>Read More</span>
+                    <img
+                      class="arrow-up-white"
+                      src="./assets/icon/arrows/nw-arrow/nw-arrow-up-white.png"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </a>
+            </div>
           </div>
-          <i class="fa-solid fa-arrow-right"></i> 
+          <div id="btn-hero-next" class="btn-hero">
+            <img
+              class="arrow-black"
+              src="./assets/icon/arrows/thin-arrow/thin-right-arrow-black.png"
+              alt="Arrow Next"
+            />
+            <img
+              class="arrow-white"
+              src="./assets/icon/arrows/thin-arrow/thin-right-arrow-white.png"
+              alt="Arrow Next"
+            />
+          </div>
         </div>
       </header>
-      <div class="bottom-detail">
-        <img src="./assets/images/details/hero-bottom-detail.png" alt="White Brushstroke Detail" />
-      </div>
+      <img
+        class="bottom-detail"
+        src="./assets/images/details/hero-bottom-detail.png"
+        alt="White Brushstroke Detail"
+      />
     </section>
     <main>
       <div class="sponsors">
         <a href="#">
           <div class="sponsor">
-            <img src="./assets/images/sponsors/sponsors-1.png" alt="Outdoor Expedition" /></div
+            <img
+              src="./assets/images/sponsors/sponsors-1.png"
+              alt="Outdoor Expedition"
+            /></div
         ></a>
-        <a href="#">        <div class="sponsor">
-          <img src="./assets/images/sponsors/sponsors-2.png" alt="Travel" />
-        </div></a>
-        <a href="#">        <div class="sponsor">
-          <img src="./assets/images/sponsors/sponsors-3.png" alt="Outdoor Adventures" />
-        </div></a>
-        <a href="#">        <div class="sponsor">
-          <img src="./assets/images/sponsors/sponsors-4.png" alt="Nature Magazine" />
-        </div></a>
-        <a href="#">        <div class="sponsor">
-          <img src="./assets/images/sponsors/sponsors-5.png" alt="Mountain" />
-        </div></a>
+        <a href="#">
+          <div class="sponsor">
+            <img
+              src="./assets/images/sponsors/sponsors-2.png"
+              alt="Travel"
+            /></div
+        ></a>
+        <a href="#">
+          <div class="sponsor">
+            <img
+              src="./assets/images/sponsors/sponsors-3.png"
+              alt="Outdoor Adventures"
+            /></div
+        ></a>
+        <a href="#">
+          <div class="sponsor">
+            <img
+              src="./assets/images/sponsors/sponsors-4.png"
+              alt="Nature Magazine"
+            /></div
+        ></a>
+        <a href="#">
+          <div class="sponsor">
+            <img
+              src="./assets/images/sponsors/sponsors-5.png"
+              alt="Mountain"
+            /></div
+        ></a>
       </div>
       <!-- blog -->
-  <section class="section">
-    <div class="container">
-      <span class="section-label">Lorem ipsum dolor</span>
-      <h2 class="section-title">Travel Essentials<span class="accent"> Tips</span></h2>
+      <section class="section">
+        <div class="container">
+          <span class="section-label">Lorem ipsum dolor</span>
+          <h2 class="section-title">
+            Travel Essentials <span class="accent beige-bg">Tips</span>
+          </h2>
 
-      <div class="tips-grid">
-
-        <!-- card img na esquerda -->
-        <div class="tip-card-large">
-          <a href="https://wanderland.qodeinteractive.com/moving-trough-the-everyday-urban-jungle-of-your-city/">
-            <img src="./assets/images/blog-post/blog-post-1.jpg" alt="Moving trough" title="Moving trough: the everyday urban jungle of your city"/>
-          </a>
-          <div>
-            <span class="post-tag">Travel tips</span>
-            <div class="post-meta">
-              <a href="https://wanderland.qodeinteractive.com/2019/10/">
-              <span><i class="fa-solid fa-calendar"></i> October 8, 2019</span>
+          <div class="tips-container">
+            <!-- card img na esquerda -->
+            <div class="tip-card left-img">
+              <a
+                href="https://wanderland.qodeinteractive.com/moving-trough-the-everyday-urban-jungle-of-your-city/"
+              >
+                <img
+                  class="post-image-blog"
+                  src="./assets/images/blog-post/blog-post-1.jpg"
+                  alt="Moving trough"
+                  title="Moving trough: the everyday urban jungle of your city"
+                />
               </a>
-              <a href="https://wanderland.qodeinteractive.com/author/alisa-michaels/">
-              <span><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa Michaels</span>
-              </a>
-            </div>
-            <a href="https://wanderland.qodeinteractive.com/moving-trough-the-everyday-urban-jungle-of-your-city/" class="post-title" title="Moving trough: the everyday urban jungle of your city">Moving trough: the everyday urban jungle of your city</a>
-            <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu nt ut labore et dolore magna aliqua. Ut enim. ad minim veniam ...</p>
-            <a href="https://wanderland.qodeinteractive.com/moving-trough-the-everyday-urban-jungle-of-your-city/" class="btn-link"><i class="fa-solid fa-arrow-right fa-rotate-by"></i> Read More</a>
-          </div>
-        </div>
-
-        <!-- card img na direita -->
-        <div class="tip-card-large">
-          <div class="tip-item">
-            <a href="https://wanderland.qodeinteractive.com/top-hiking-trails-in-the-peruvian-amazon-rain-forest-2/">
-              <img src="./assets/images/blog-post/blog-post-2.jpg" alt="Hiking Peru" title="Top Hiking Trails in the Peruvian Amazon Rain Forest"/>
-            </a>
-            <div>
-              <span class="post-tag">Tips</span>
-              <div class="post-meta">
-              <a href="https://wanderland.qodeinteractive.com/2019/10/">
-              <span><i class="fa-solid fa-calendar"></i> October 10, 2019</span>
-              </a>
-              <a href="https://wanderland.qodeinteractive.com/author/alisa-michaels/">
-              <span><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa Michaels</span>
-              </a>
+              <div>
+                <span class="post-tag">Travel tips</span>
+                <div class="post-meta">
+                  <a href="https://wanderland.qodeinteractive.com/2019/10/">
+                    <span
+                      ><i class="fa-solid fa-calendar"></i> October 8,
+                      2019</span
+                    >
+                  </a>
+                  <a
+                    href="https://wanderland.qodeinteractive.com/author/alisa-michaels/"
+                  >
+                    <span
+                      ><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa
+                      Michaels</span
+                    >
+                  </a>
+                </div>
+                <a
+                  href="https://wanderland.qodeinteractive.com/moving-trough-the-everyday-urban-jungle-of-your-city/"
+                  class="post-title"
+                  title="Moving trough: the everyday urban jungle of your city"
+                  >Moving trough: the everyday urban jungle of your city</a
+                >
+                <p class="post-excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididu nt ut labore et dolore magna
+                  aliqua. Ut enim. ad minim veniam ...
+                </p>
+                <a
+                  href="https://wanderland.qodeinteractive.com/moving-trough-the-everyday-urban-jungle-of-your-city/"
+                  class="btn-link"
+                  >><div class="btn-container-link black">
+                    <div class="btn-up">
+                      <span>Read More</span>
+                      <img
+                        class="arrow-up-black"
+                        src="./assets/icon/arrows/nw-arrow/nw-arrow-up-black.png"
+                        alt=""
+                      />
+                    </div>
+                  </div></a
+                >
               </div>
-              <a href="https://wanderland.qodeinteractive.com/top-hiking-trails-in-the-peruvian-amazon-rain-forest-2/" class="post-title">Top Hiking Trails in the Peruvian Amazon Rain Forest</a>
-              <p class="post-excerpt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu nt ut labore et dolore magna aliqua. Ut enim. ad minim veniam, ...</p>
-              <a href="https://wanderland.qodeinteractive.com/top-hiking-trails-in-the-peruvian-amazon-rain-forest-2/" class="btn-link"><i class="fa-solid fa-arrow-right fa-rotate-by"></i> Read More</a>
+            </div>
+
+            <!-- card img na direita -->
+            <div class="tip-card right-img">
+              <a
+                href="https://wanderland.qodeinteractive.com/top-hiking-trails-in-the-peruvian-amazon-rain-forest-2/"
+              >
+                <img
+                  class="post-image-blog"
+                  src="./assets/images/blog-post/blog-post-2.jpg"
+                  alt="Hiking Peru"
+                  title="Top Hiking Trails in the Peruvian Amazon Rain Forest"
+                />
+              </a>
+              <div>
+                <span class="post-tag">Tips</span>
+                <div class="post-meta">
+                  <a href="https://wanderland.qodeinteractive.com/2019/10/">
+                    <span
+                      ><i class="fa-solid fa-calendar"></i> October 10,
+                      2019</span
+                    >
+                  </a>
+                  <a
+                    href="https://wanderland.qodeinteractive.com/author/alisa-michaels/"
+                  >
+                    <span
+                      ><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa
+                      Michaels</span
+                    >
+                  </a>
+                </div>
+                <a
+                  href="https://wanderland.qodeinteractive.com/top-hiking-trails-in-the-peruvian-amazon-rain-forest-2/"
+                  class="post-title"
+                  >Top Hiking Trails in the Peruvian Amazon Rain Forest</a
+                >
+                <p class="post-excerpt">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididu nt ut labore et dolore magna
+                  aliqua. Ut enim. ad minim veniam, ...
+                </p>
+                <a
+                  href="https://wanderland.qodeinteractive.com/top-hiking-trails-in-the-peruvian-amazon-rain-forest-2/"
+                  class="btn-link"
+                  ><div class="btn-container-link black">
+                    <div class="btn-up">
+                      <span>Read More</span>
+                      <img
+                        class="arrow-up-black"
+                        src="./assets/icon/arrows/nw-arrow/nw-arrow-up-black.png"
+                        alt=""
+                      />
+                    </div>
+                  </div></a
+                >
+              </div>
             </div>
           </div>
+        </div>
+      </section>
+      <!-- newsletter -->
+      <div class="newsletter-banner">
+        <div class="newsletter-inner">
+          <img
+            class="newsletter-image"
+            src="./assets/images/newsletter-card/newsletter-book.png"
+            alt="Newsletter"
+          />
+          <div class="newsletter-text">
+            <span class="label">Lorem ipsum dolor</span>
+            <h2 class="section-title">
+              Finding the perfect trails to hike is easy with
+              <span class="accent white-bg">Newsletter</span>
+            </h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididu nt ut labore et dolore minim veniam,
+              quism.
+            </p>
+            <form id="newsletter-form" class="newsletter-form">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="E-mail" />
+              <button type="submit"><div class="btn-container-link white">
+                <div class="btn-up">
+                  <span>Subscribe</span>
+                  <img
+                    class="arrow-up-black"
+                    src="./assets/icon/arrows/nw-arrow/nw-arrow-up-white.png"
+                    alt=""
+                  />
+                </div>
+              </div></button>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- newsletter -->
-  <div class="newsletter-banner">
-    <div class="newsletter-inner">
-      <img class="newsletter-image" src="./assets/images/newsletter-card/newsletter-book.png" alt="Newsletter" />
-      <div class="newsletter-text">
-        <span class="label">Lorem ipsum dolor</span>
-        <h2>Finding the perfect trails to hike is easy with <span class="accent">Newsletter</span></h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididu nt ut labore et dolore minim veniam, quism.</p>
-        <form id="newsletter-form" class="newsletter-form">
-          <input type="text" placeholder="Name" />
-          <input type="email" placeholder="E-mail" />
-          <button type="submit">Subscribe</button>
-        </form>
-      </div>
-    </div>
-  </div>
-  <!-- carousel -->
-  <section class="section">
-    <div class="container">
-      <span class="section-label">Lorem ipsum dolore</span>
-      <h2 class="section-title">Featured Blog <span class="accent">Posts</span></h2>
+      <!-- carousel -->
+      <section class="section">
+        <div class="container">
+          <span class="section-label">Lorem ipsum dolore</span>
+          <h2 class="section-title">
+            Featured Blog <span class="accent beige-bg">Posts</span>
+          </h2>
 
-      <div class="posts-blog">
+          <div class="posts-blog">
+            <div class="post-card">
+              <span class="post-tag">Adventure</span>
+              <a
+                href="https://wanderland.qodeinteractive.com/pre-trip-reading-travel-plans-for-amazon-brazil/"
+              >
+                <img
+                  src="./assets/images/carousel-blog/blog-carousel-1.jpg"
+                  alt="Reykjavik"
+                />
+              </a>
+              <div class="post-meta">
+                <a href="https://wanderland.qodeinteractive.com/2019/10/">
+                  <span
+                    ><i class="fa-solid fa-calendar"></i> October 8, 2019</span
+                  >
+                </a>
+                <a
+                  href="https://wanderland.qodeinteractive.com/author/alisa-michaels/"
+                >
+                  <span
+                    ><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa
+                    Michaels</span
+                  >
+                </a>
+              </div>
+              <a
+                href="https://wanderland.qodeinteractive.com/pre-trip-reading-travel-plans-for-amazon-brazil/"
+                title="Pre-Trip Reading & Travel Plans for Amazon, Brazil"
+                class="post-title"
+                >Pre-Trip Reading & Travel Plans for Amazon, Brazil</a
+              >
+            </div>
 
-        <div class="post-card">
-          <span class="post-tag">Adventure</span>
-          <a href="https://wanderland.qodeinteractive.com/pre-trip-reading-travel-plans-for-amazon-brazil/">
-          <img src="./assets/images/carousel-blog/blog-carousel-1.jpg" alt="Reykjavik" />
-          </a>
-          <div class="post-meta">
-            <a href="https://wanderland.qodeinteractive.com/2019/10/">
-              <span><i class="fa-solid fa-calendar"></i> October 8, 2019</span>
-            </a>
-            <a href="https://wanderland.qodeinteractive.com/author/alisa-michaels/">
-            <span><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa Michaels</span>
-            </a>
-          </div>
-          <a href="https://wanderland.qodeinteractive.com/pre-trip-reading-travel-plans-for-amazon-brazil/" title="Pre-Trip Reading & Travel Plans for Amazon, Brazil" class="post-title">Pre-Trip Reading & Travel Plans for Amazon, Brazil</a>
-        </div>
+            <div class="post-card">
+              <span class="post-tag">Adventure</span>
+              <a
+                href="https://wanderland.qodeinteractive.com/the-ultimate-grand-canyon-travel-guide-for-alpinists/"
+              >
+                <img
+                  src="./assets/images/carousel-blog/blog-carousel-2.jpg"
+                  alt="Reykjavik"
+                />
+              </a>
+              <div class="post-meta">
+                <a href="https://wanderland.qodeinteractive.com/2019/10/">
+                  <span
+                    ><i class="fa-solid fa-calendar"></i> October 8, 2019</span
+                  >
+                </a>
+                <a
+                  href="https://wanderland.qodeinteractive.com/author/alisa-michaels/"
+                >
+                  <span
+                    ><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa
+                    Michaels</span
+                  >
+                </a>
+              </div>
+              <a
+                href="https://wanderland.qodeinteractive.com/the-ultimate-grand-canyon-travel-guide-for-alpinists/"
+                title="The Ultimate Grand Canyon Travel Guide for alpinists"
+                class="post-title"
+                >The Ultimate Grand Canyon Travel Guide for alpinists</a
+              >
+            </div>
 
-          <div class="post-card">
-          <span class="post-tag">Adventure</span>
-          <a href="https://wanderland.qodeinteractive.com/the-ultimate-grand-canyon-travel-guide-for-alpinists/">
-          <img src="./assets/images/carousel-blog/blog-carousel-2.jpg" alt="Reykjavik" />
-          </a>
-          <div class="post-meta">
-            <a href="https://wanderland.qodeinteractive.com/2019/10/">
-              <span><i class="fa-solid fa-calendar"></i> October 8, 2019</span>
-            </a>
-            <a href="https://wanderland.qodeinteractive.com/author/alisa-michaels/">
-            <span><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa Michaels</span>
-            </a>
-          </div>
-          <a href="https://wanderland.qodeinteractive.com/the-ultimate-grand-canyon-travel-guide-for-alpinists/" title="The Ultimate Grand Canyon Travel Guide for alpinists" class="post-title">The Ultimate Grand Canyon Travel Guide for alpinists</a>
-        </div>
-        
-        <div class="post-card">
-          <span class="post-tag">Adventure</span>
-          <a href="https://wanderland.qodeinteractive.com/guided-hikes-in-iceland-rhyolite-mountain-trail/">
-          <img src="./assets/images/carousel-blog/blog-carousel-3.jpg" alt="Reykjavik" />
-          </a>
-          <div class="post-meta">
-            <a href="https://wanderland.qodeinteractive.com/2019/10/">
-              <span><i class="fa-solid fa-calendar"></i> October 8, 2019</span>
-            </a>
-            <a href="https://wanderland.qodeinteractive.com/author/alisa-michaels/">
-            <span><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa Michaels</span>
-            </a>
-          </div>
-          <a href="https://wanderland.qodeinteractive.com/guided-hikes-in-iceland-rhyolite-mountain-trail/" title="Guided Hikes in Iceland – Rhyolite mountain Trail" class="post-title">Guided Hikes in Iceland – Rhyolite mountain Trail</a>
-        </div>
+            <div class="post-card">
+              <span class="post-tag">Adventure</span>
+              <a
+                href="https://wanderland.qodeinteractive.com/guided-hikes-in-iceland-rhyolite-mountain-trail/"
+              >
+                <img
+                  src="./assets/images/carousel-blog/blog-carousel-3.jpg"
+                  alt="Reykjavik"
+                />
+              </a>
+              <div class="post-meta">
+                <a href="https://wanderland.qodeinteractive.com/2019/10/">
+                  <span
+                    ><i class="fa-solid fa-calendar"></i> October 8, 2019</span
+                  >
+                </a>
+                <a
+                  href="https://wanderland.qodeinteractive.com/author/alisa-michaels/"
+                >
+                  <span
+                    ><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa
+                    Michaels</span
+                  >
+                </a>
+              </div>
+              <a
+                href="https://wanderland.qodeinteractive.com/guided-hikes-in-iceland-rhyolite-mountain-trail/"
+                title="Guided Hikes in Iceland – Rhyolite mountain Trail"
+                class="post-title"
+                >Guided Hikes in Iceland – Rhyolite mountain Trail</a
+              >
+            </div>
 
-        <div class="post-card">
-          <span class="post-tag">Adventure</span>
-          <a href="https://wanderland.qodeinteractive.com/my-favorite-hiking-trails-around-reykjavik/">
-          <img src="./assets/images/carousel-blog/blog-carousel-4.jpg" alt="Reykjavik" />
-          </a>
-          <div class="post-meta">
-            <a href="https://wanderland.qodeinteractive.com/2019/10/">
-              <span><i class="fa-solid fa-calendar"></i> October 10, 2019</span>
-            </a>
-            <a href="https://wanderland.qodeinteractive.com/author/alisa-michaels/">
-            <span><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa Michaels</span>
-            </a>
+            <div class="post-card">
+              <span class="post-tag">Adventure</span>
+              <a
+                href="https://wanderland.qodeinteractive.com/my-favorite-hiking-trails-around-reykjavik/"
+              >
+                <img
+                  src="./assets/images/carousel-blog/blog-carousel-4.jpg"
+                  alt="Reykjavik"
+                />
+              </a>
+              <div class="post-meta">
+                <a href="https://wanderland.qodeinteractive.com/2019/10/">
+                  <span
+                    ><i class="fa-solid fa-calendar"></i> October 10, 2019</span
+                  >
+                </a>
+                <a
+                  href="https://wanderland.qodeinteractive.com/author/alisa-michaels/"
+                >
+                  <span
+                    ><i class="fa-solid fa-pen fa-rotate-270"></i> by Alisa
+                    Michaels</span
+                  >
+                </a>
+              </div>
+              <a
+                href="https://wanderland.qodeinteractive.com/my-favorite-hiking-trails-around-reykjavik/"
+                title="My Favorite Hiking Trails Around Reykjavík"
+                class="post-title"
+                >My Favorite Hiking Trails Around Reykjavík</a
+              >
+            </div>
           </div>
-          <a href="https://wanderland.qodeinteractive.com/my-favorite-hiking-trails-around-reykjavik/" title="My Favorite Hiking Trails Around Reykjavík" class="post-title">My Favorite Hiking Trails Around Reykjavík</a>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
     </main>
     <footer>
       <div class="footer-grid-top">
-      <div class="footer-top">
-        <div>
-          <div class="footer logo">
-            <img src="./assets/images/logo/green-logo.png" alt="" />
-          </div>
-          <p class="footer-desc">
-            Based in Utah, USA, Wanderland is a blog by Markus Thompson. His
-            posts explore outdoor experiences through photos and diaries with
-            tips & tricks.
-          </p>
-        </div>
-      </div>
-      <div class="footer-grid">
-        <div>
-          <div class="footer-col-title">About the Blog</div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod mas.
-          </p>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Recent News</div>
-          <div class="footer-news-item">
-            <span class="footer-news-date">October 2, 2019</span>
-            <a href="#" class="footer-news-title">Trip to Iceland</a>
-          </div>
-          <div class="footer-news-item">
-            <span class="footer-news-date">October 2, 2019</span>
-            <a href="#" class="footer-news-title"
-              >On the Shores of a Vanishing Island in India</a
-            >
-          </div>
-          <div class="footer-news-item">
-            <span class="footer-news-date">October 2, 2019</span>
-            <a href="#" class="footer-news-title">Visiting Rabat</a>
-          </div>
-        </div>
-
-        <div>
-          <div class="footer-col-title">Subscribe to Newsletter</div>
-          <form action="">
-            <div class="footer-newsletter-form">
-              <input type="text" placeholder="Your name..." />
-              <input type="email" placeholder="Your email..." />
-              <button class="btn-link" type="submit"><span>Subscribe</span></button>
+        <div class="footer-top">
+          <div>
+            <div class="footer logo">
+              <img src="./assets/images/logo/green-logo.png" alt="" />
             </div>
-          </form>
+            <p class="footer-desc">
+              Based in Utah, USA, Wanderland is a blog by Markus Thompson. His
+              posts explore outdoor experiences through photos and diaries with
+              tips & tricks.
+            </p>
+          </div>
+        </div>
+        <div class="footer-grid">
+          <div>
+            <div class="footer-col-title">About the Blog</div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod mas.
+            </p>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Recent News</div>
+            <div class="footer-news-item">
+              <span class="footer-news-date">October 2, 2019</span>
+              <a href="#" class="footer-news-title">Trip to Iceland</a>
+            </div>
+            <div class="footer-news-item">
+              <span class="footer-news-date">October 2, 2019</span>
+              <a href="#" class="footer-news-title"
+                >On the Shores of a Vanishing Island in India</a
+              >
+            </div>
+            <div class="footer-news-item">
+              <span class="footer-news-date">October 2, 2019</span>
+              <a href="#" class="footer-news-title">Visiting Rabat</a>
+            </div>
+          </div>
+
+          <div>
+            <div class="footer-col-title">Subscribe to Newsletter</div>
+            <form action="">
+              <div class="footer-newsletter-form">
+                <input type="text" placeholder="Your name..." />
+                <input type="email" placeholder="Your email..." />
+                <button class="btn-link" type="submit">
+                  <div class="btn-container-link white">
+                    <div class="btn-up">
+                      <span>Subscribe</span>
+                      <img
+                        class="arrow-up-black"
+                        src="./assets/icon/arrows/nw-arrow/nw-arrow-up-white.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
       <div class="footer-bottom">
         <div class="footer-socials">
           <h2>Socials</h2>
@@ -440,7 +675,7 @@
         <p></p>
         <span
           >© 2020 <a href="https://qodeinteractive.com/">Qode Interactive</a
-          ><span class="rights-highlight">, All Rights Reserved.</span></span
+          ><span class="gray-highlight">, All Rights Reserved.</span></span
         >
       </div>
     </footer>

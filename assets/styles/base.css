@@ -29,6 +29,7 @@
   --light-gray:  #b9b9b9;
   --green:       #59815b;
   --green-hover: #476849;
+  --beige: #edeae1;
   --muli-regular: "Muli-Regular", sans-serif;
   --crimson-italic: "Crimson-Text-Italic", sans-serif;
   --oswald-semibold: "Oswald-Semibold", sans-serif;
@@ -44,15 +45,15 @@ body {
 }
 h1 {
   font-family: var(--oswald-semibold);
+  font-size: 2em;
   color: var(--dark);
   line-height: 1.2;
 }
 /* títulos das seções */
 .section-title {
   font-family: var(--oswald-semibold);
-  font-size: 2rem;
+  font-size: 3.1em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
   color: var(--dark);
   text-align: center;
   margin-bottom: 40px;
@@ -60,10 +61,18 @@ h1 {
 .section-title .accent {
   color: var(--green);
 }
+.section-title .beige-bg {
+  background-color: var(--beige);
+  padding: 0 5px;
+}
+.section-title .white-bg {
+  background-color: var(--white);
+  padding: 0 5px;
+}
 /* label pequeno acima dos títulos de seção */
 .section-label {
   font-family: var(--crimson-italic);
-  font-size: 0.85rem;
+  font-size: 1.3em;
   color: var(--gray);
   text-align: center;
   display: block;
@@ -77,4 +86,8 @@ h1 {
 /* seções com padding vertical padrão */
 .section {
   padding: 70px 0;
+}
+/* atenua a cor para cinza */
+.gray-highlight {
+  color: var(--gray);
 }

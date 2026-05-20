@@ -4,22 +4,41 @@
   height: 76px;
   width: auto;
 }
+.header.logo img {
+  width: 144px;
+}
 /* título dos links sociais */
 .header-socials h2, .footer-socials h2 {
   display: inline;
   font-family: var(--crimson-italic);
   font-size: 0.9em;
 }
+/* margens dos contatos */
 .header-contacts a { 
+  font-size: inherit;
   margin: 0 10px;
 }
 .header-contacts i {
   margin: 0 5px;
 }
+/* componentes de link social (cabeçalho e rodapé) */
+.header.socials {
+  color: #ffffff;
+}
+.footer.socials {
+  display: inline-block;
+  color: #878787;
+}
+.socials i {
+  margin: 0 0 0 5px;
+}
+/* textos do cabeçalho de baixo */
+nav .nav-link, .header-bottom span {
+  font-size: 1.2em;
+}
 /* links do nav */
 .nav-link {
   color: var(--white);
-  font-size: 1rem;
   padding: 0 14px;
   transition: color 1s ease;
   position: relative;
@@ -28,77 +47,84 @@
   color: var(--green);
   background-color: var(--white);
 }
-/* botões que ficam nas laterais */
-.btn-nav {
-  display: flex;
-  align-items: center;
-  gap: 8px;
+/* botões que ficam no cabeçalho */
+.btn-header {
   color: var(--white);
   font-size: 1.1rem;
   cursor: pointer;
   transition: opacity 1s;
 }
-.btn-nav:hover { opacity: 0.7; }
-/* */
+.btn-header:hover { 
+  opacity: 0.7;
+}
+/* botões que ficam dentro do hero*/
+.btn-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  background-color: var(--white);
+  opacity: 0.8;
+  padding: 5px 20px;
+  cursor: pointer;
+  transition: background 1s ease, display 1s ease;
+}
+/* lógica de animação do botão: a imagem da seta muda de display */
+.btn-hero:hover {
+  background-color: var(--green);
+}
+.btn-hero:hover .arrow-white {
+  display: flex;
+}
+.btn-hero:hover .arrow-black {
+  display: none;
+}
+.btn-hero .arrow-white {
+  display: none;
+}
+
+.btn-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-up img {
+  display: inline-block;
+}
+
+/* componentes do header */
 header li {
   display: inline-block;
 }
-
-
 .header-top i {
   font-size: 0.8em;
 }
-
-
-.header.socials {
-  color: #ffffff;
-}
-
-.footer.socials {
-  display: inline-block;
-  color: #878787;
-}
-
-.sponsor {
-  height: 95px;
-  width: 150px;
-}
-
+/* divisórias do cabeçalho e rodapé */
 .header-top div,
 .footer-bottom div {
   display: inline-block;
 }
-
-.header-bottom div {
-  display: block;
+/* container e imagens de patrocinadores */
+.sponsor {
+  padding: 20px 60px;
+  margin-left: 60px;
 }
-
+.sponsor img {
+  height: 95px;
+  width: 150px;
+  transform: scale(1.4);
+}
+/* submenus do cabeçalho */
 .submenu {
   display: none;
 }
+/* container dos posts */
 
-.box .link,
-.box span {
-  margin: 0 10px 0 5px;
+.post-image-blog {
+  height: 320px;
+  width: 460px;
 }
 
-.socials i {
-  margin: 0 0 0 5px;
-}
-
-header a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.footer-logo {
-  height: 77px;
-  width: 144px;
-}
-
-.rights-highlight {
-  color: #999999;
-}
 
 /* ícone de seta com rotação */
 .fa-rotate-by {

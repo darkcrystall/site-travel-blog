@@ -9,6 +9,7 @@
 }
 a {
   text-decoration: none;
+  font: inherit;
   color: inherit;
   cursor: pointer;
 }
@@ -20,7 +21,8 @@ li {
 button,
 input,
 select,
-textarea {
+textarea, 
+span {
   background: none;
   border: none;
   outline: none;
