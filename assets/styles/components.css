@@ -122,6 +122,9 @@ nav .nav-link, .header-bottom span {
 .btn-up .arrow-up-white {
   display: none;
 }
+.btn-up.green .arrow-up-white {
+  display: flex;
+}
 /* componentes do header */
 header li {
   display: inline-block;
