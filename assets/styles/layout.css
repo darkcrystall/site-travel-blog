@@ -3,9 +3,7 @@
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background: url("../images/hero-background/background-1.jpg");
-  background-position: bottom;
-  background-size: cover;
+  background: url("../images/hero-background/background-1.jpg") center center / cover no-repeat;;
   display: flex;
   flex-direction: column;
 }
@@ -19,7 +17,7 @@
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  min-height: 800px;
+  min-height: 60vh;
   max-width: 100vw;
   flex-direction: row;
   color: var(--white);
@@ -29,11 +27,31 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 0 60px;
 }
 /* conteúdo do hero */
 .description-content div {
   display: inline-block;
 }
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: slideUp 7s ease-out forwards;
+}
+/* animação que faz subir */
+@keyframes slideUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .hero-content h1 {
   font-family: var(--oswald-semibold);
   text-transform: uppercase;
@@ -41,22 +59,12 @@
   color: var(--white);
   margin-bottom: 18px;
 }
-.hero > * {
-    z-index: 1;
-}
-.hero-content .hero-meta {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  font-family: var(--font-serif);
-  font-size: 0.9rem;
-  color: rgba(255,255,255,0.85);
-  margin-bottom: 16px;
-}
 .hero-content p {
   max-width: 560px;
   margin: 0 auto 28px;
-  color: rgba(255,255,255,0.8);
+  color: var(--white);
+  font-family: var(--muli-regular);
+  font-weight: 600;
   font-size: 0.95rem;
 }
 /* detalhe que fica embaixo do hero */
@@ -64,6 +72,7 @@
   width: 100vw;
   position: absolute;
   bottom: 0;
+  z-index: 1;
 }
 /* container dos cabeçalhos */
 .container-header {
@@ -100,6 +109,7 @@
   padding: 40px;
 }
 .tip-card {
+  position: relative;
   display: flex;
   margin-bottom: 30px;
 }
@@ -109,25 +119,30 @@
 .tip-card.right-img {
   flex-direction: row-reverse;
 }
+/* container de notícias */
+.newslatter-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
 /* todo footer */
 footer {
-  color: #b9b9b9;
+  color: var(--light-gray);
 }
 /* footer que engloba o top e o grid */
 .footer-grid-top {
 display: flex;
 justify-content: space-between;
 align-items: center;
-  background-color: #242625;
-  height: 50%;
+background-color: var(--dark-footer);
 }
 /* footer parte de baixo */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10%;
-  width: 100%;
   padding: 10px 20px;
-  background-color: #111111;
+  background-color: var(--darker);
 }
