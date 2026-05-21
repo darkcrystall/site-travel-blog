@@ -63,7 +63,7 @@ nav .nav-link, .header-bottom span {
   opacity: 0.7;
 }
 /* botões que ficam dentro do hero */
-.btn-hero {
+.btn-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,16 +75,16 @@ nav .nav-link, .header-bottom span {
   transition: background 1s ease, display 1s ease;
 }
 /* lógica de animação do botão: a imagem da seta muda de display */
-.btn-hero:hover {
+.btn-arrow:hover {
   background-color: var(--green);
 }
-.btn-hero:hover .arrow-white {
+.btn-arrow:hover .arrow-white {
   display: flex;
 }
-.btn-hero:hover .arrow-black {
+.btn-arrow:hover .arrow-black {
   display: none;
 }
-.btn-hero .arrow-white {
+.btn-arrow .arrow-white {
   display: none;
 }
 /* botões que apontam ao nordeste */
@@ -95,7 +95,7 @@ nav .nav-link, .header-bottom span {
   align-items: center;
   justify-content: center;
   padding: 10px 40px;
-  transition: background 1s ease;
+  transition: background 1s ease, display 1s ease;
 }
 .btn-up.green {
   background-color: var(--green);
@@ -105,6 +105,22 @@ nav .nav-link, .header-bottom span {
 }
 .btn-up img {
   display: inline-block;
+}
+.btn-up.blog {
+  color: var(--dark);
+}
+.btn-up.blog:hover {
+  color: var(--white);
+  background-color: var(--darker);
+}
+.btn-up:hover .arrow-up-white {
+  display: flex;
+}
+.btn-up:hover .arrow-up-black {
+  display: none;
+}
+.btn-up .arrow-up-white {
+  display: none;
 }
 /* componentes do header */
 header li {
@@ -118,15 +134,49 @@ header li {
 .footer-bottom div {
   display: inline-block;
 }
-/* submenus do cabeçalho */
-.submenu {
-  display: none;
-}
-/* links acima do título do conteúdo do hero */
+
+
+/* links de descrição (data e autor) */
 .description-link {
   font-family: var(--crimson-italic);
   margin-bottom: 8px;
+}
+/* links acima do título do conteúdo do hero */
+.description-link.header-content {
   padding: 0 10px;
+}
+/* animação dos links do header */
+.description-link.header-content .text {
+  transition: all 3s ease;
+}
+.description-link.header-content .text:hover {
+  color: var(--off-white);
+  text-decoration: underline;
+}
+/* meta do post (data + autor) */
+.post-meta {
+  display: flex;
+  gap: 14px;
+  font-size: 1.2em;
+  color: var(--gray);
+}
+.post-meta a, .post-meta i { 
+  margin-right: 4px; 
+  font-size: 0.9em; 
+}
+/* lógica de animação dos links */
+.post-meta a { 
+  color: var(--gray); 
+  transition: color 3s ease;
+}
+.post-meta a:hover, .post-meta.text:hover { 
+  color: var(--green);
+}
+.post-meta.text {
+  display: inline;
+}
+.post-meta.text:hover {
+  text-decoration: underline;
 }
 /* container e imagens de patrocinadores */
 .sponsor {
@@ -140,12 +190,37 @@ header li {
 .sponsor:hover {
   opacity: 0.4;
 }
-
-
+/* faz certos elementos sumirem */
+.tip-card.post-card.hidden {
+  display: none;
+}
+.container-hero.hidden {
+  display: none;
+}
+/* submenus do cabeçalho */
+.submenu.hidden {
+  display: none;
+}
 /* imagens dos posts */
-.post-image-blog img {
-  height: 320px;
+.post-image-blog {
+  height: 300px;
   width: 460px;
+}
+/* imagens dos posts (carousel) */
+.post-image-carousel {
+  height: 350px;
+  width: 300px;
+}
+.post-content.left {
+  padding-left: 30px;
+}
+.post-content.right {
+  padding-right: 30px;
+}
+/* imagem no container das notícias */
+.newsletter-image {
+  height: 300px;
+  width: 430px;
 }
 /* tag de categoria do post */
 .post-tag {
@@ -172,37 +247,25 @@ header li {
   right: 0;
 }
 
-/* meta do post (data + autor) */
-.post-meta {
-  display: flex;
-  gap: 14px;
-  font-family: var(--crimson-italic);
-  font-size: 0.82rem;
-  color: var(--gray);
-  margin-bottom: 8px;
-  flex-wrap: wrap;
-}
-.post-meta a { color: var(--gray); transition: color 0.2s; }
-.post-meta a:hover { color: var(--green); }
-.post-meta i { margin-right: 4px; font-size: 0.75rem; }
 
 /* título do post */
 .post-title {
   display: block;
   font-family: var(--oswald-semibold);
-  font-size: 0.95rem;
+  font-size: 1.5em;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
   color: var(--dark);
   margin-bottom: 10px;
   line-height: 1.35;
-  transition: color 0.2s;
+  transition: all 3s ease;
 }
-.post-title:hover { color: var(--green); }
+.post-title:hover {
+  text-decoration: underline;
+}
 
 /* excerto do post */
 .post-excerpt {
-  font-size: 0.85rem;
+  font-size: 1em;
   line-height: 1.65;
   color: var(--gray);
   margin-bottom: 14px;

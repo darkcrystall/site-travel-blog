@@ -2,7 +2,7 @@
 .hero {
   position: relative;
   height: 100vh;
-  min-height: 600px;
+  min-height: 32em;
   background: url("../images/hero-background/background-1.jpg") center center / cover no-repeat;;
   display: flex;
   flex-direction: column;
@@ -51,7 +51,6 @@
     opacity: 1;
   }
 }
-
 .hero-content h1 {
   font-family: var(--oswald-semibold);
   text-transform: uppercase;
@@ -64,15 +63,17 @@
   margin: 0 auto 28px;
   color: var(--white);
   font-family: var(--muli-regular);
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1em;
 }
-/* detalhe que fica embaixo do hero */
+/* detalhe que fica embaixo do que fica embaixo de alguns containers */
 .bottom-detail {
   width: 100vw;
   position: absolute;
   bottom: 0;
   z-index: 1;
+}
+.newsletter.rotate {
+  transform: rotate(180deg);
 }
 /* container dos cabeçalhos */
 .container-header {
@@ -103,16 +104,32 @@
   align-items: center;
   min-height: 200px;
 }
-/* container dos posts */
+/* container dos posts (toda a seção) */
+.blog-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* conteúdo do post com espaço limitado */
+.post-content {
+  max-height: 10%;
+  max-width: 30em;
+}
+/* container que engloba todo o contéudo dos posts */
 .tips-container {
   display: inline-block;
   padding: 40px;
 }
+/* container que engloba a imagem e o rotúlo */
 .tip-card {
   position: relative;
   display: flex;
-  margin-bottom: 30px;
+  margin: 20px 30px;
+  flex-direction: column;
 }
+/* inverte as direções */
 .tip-card.left-img {
   flex-direction: row;
 }
@@ -120,11 +137,29 @@
   flex-direction: row-reverse;
 }
 /* container de notícias */
-.newslatter-banner {
+.newsletter-banner {
+  position: relative;
+  min-height: fit-content;
+  background-color: var(--beige);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+.newsletter-content {
+  display: inline;
+}
+/* container do carousel */
+.blog-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.posts-blog {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 
 /* todo footer */
