@@ -58,15 +58,15 @@ h1 {
   text-align: center;
   margin-bottom: 40px;
 }
-.section-title .accent {
+.accent {
   color: var(--green);
 }
-.section-title .beige-bg {
-  background-color: var(--beige);
+.white-bg {
+  background-color: var(--white);
   padding: 0 5px;
 }
-.section-title .white-bg {
-  background-color: var(--white);
+.beige-bg {
+  background-color: var(--beige);
   padding: 0 5px;
 }
 /* label pequeno acima dos títulos de seção */
