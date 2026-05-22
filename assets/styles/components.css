@@ -99,6 +99,7 @@ nav .nav-link, .header-bottom span {
 }
 .btn-up.green {
   background-color: var(--green);
+  color: var(--white);
 }
 .btn-up.green:hover {
   background-color: var(--green-hover);
@@ -143,6 +144,13 @@ header li {
 .description-link {
   font-family: var(--crimson-italic);
   margin-bottom: 8px;
+  /* cria uma linha abaixo do link */
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  /* 100% abaixo do elemento */
+  background-position: 0 100%;
+  /* largura começa em 0 e altura de 1px */
+  background-size: 0% 1px;
 }
 /* links acima do título do conteúdo do hero */
 .description-link.header-content {
@@ -150,11 +158,11 @@ header li {
 }
 /* animação dos links do header */
 .description-link.header-content .text {
-  transition: all 3s ease;
+  transition: all 1s ease;
 }
 .description-link.header-content .text:hover {
   color: var(--off-white);
-  text-decoration: underline;
+  background-size: 100% 1px;
 }
 /* meta do post (data + autor) */
 .post-meta {
@@ -168,18 +176,23 @@ header li {
   font-size: 0.9em; 
 }
 /* lógica de animação dos links */
-.post-meta a { 
+.post-meta.text, .post-meta a { 
   color: var(--gray); 
-  transition: color 3s ease;
+  transition: all 1s ease;
 }
 .post-meta a:hover, .post-meta.text:hover { 
   color: var(--green);
 }
 .post-meta.text {
   display: inline;
+  /* cria uma linha abaixo do texto */
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 0% 1px;
 }
 .post-meta.text:hover {
-  text-decoration: underline;
+  background-size: 100% 1px;
 }
 /* container e imagens de patrocinadores */
 .sponsor {
@@ -223,7 +236,44 @@ header li {
 /* imagem no container das notícias */
 .newsletter-image {
   height: 300px;
-  width: 430px;
+  max-width: 430px;
+}
+.newsletter-text .label {
+  font-family: var(--crimson-italic);
+  font-size: 0.85rem;
+  color: var(--gray);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.section-title.newsletter {
+  text-align: left;
+  font-size: 2em;
+  margin-bottom: 12px;
+}
+
+.newsletter-text p {
+  font-size: 0.88rem;
+  margin-bottom: 20px;
+  max-width: 480px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+}
+.newsletter-form input {
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+  padding: 8px 0;
+  font-size: 0.85rem;
+  color: var(--dark);
+  background: transparent;
+}
+.newsletter-form input::placeholder { color: #aaa; }
+.blog-carousel .section-label {
+  margin-top: 20px;
 }
 /* tag de categoria do post */
 .post-tag {

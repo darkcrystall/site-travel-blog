@@ -74,6 +74,7 @@
 }
 .newsletter.rotate {
   transform: rotate(180deg);
+  top: 0;
 }
 /* container dos cabeçalhos */
 .container-header {
@@ -138,19 +139,27 @@
 }
 /* container de notícias */
 .newsletter-banner {
-  position: relative;
-  min-height: fit-content;
-  background-color: var(--beige);
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+  position: relative;
+  background-color: var(--beige);
+}
+.newsletter-inner {
+  display: flex;
+  position: relative;
+  z-index: 2;
 }
 .newsletter-content {
-  display: inline;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+.newsletter-left,
+.newsletter-right {
+  min-width: 0;
 }
 /* container do carousel */
 .blog-carousel {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
