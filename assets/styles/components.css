@@ -52,6 +52,28 @@ nav .nav-link, .header-bottom span {
   color: var(--green);
   background-color: var(--white);
 }
+.menu-item:hover .submenu, .submenu:hover {
+  display: flex;
+  width: 160%;
+  padding: 0.4em 0.6em;
+  background-color: var(--white);
+  color: var(--green);
+  font-family: var(--crimson-italic);
+  text-transform: capitalize;
+  font-size: 1.1em;
+}
+.submenu a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-repeat: no-repeat;
+  /* 100% abaixo do elemento */
+  background-position: 0 100%;
+  /* largura começa em 0 e altura de 1px */
+  background-size: 0% 1px;
+  transition: background 1s ease;
+}
+.submenu a:hover {
+  background-size: 100% 1px;
+}
 /* botões que ficam no cabeçalho */
 .btn-header {
   color: var(--white);

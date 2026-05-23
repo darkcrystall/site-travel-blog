@@ -102,20 +102,12 @@
   position: relative;
 }
 .submenu {
-  position: absolute;
-  top: 80px;
-  right: -10px;
-  display: none;
-}
-.menu-item:hover .submenu, .submenu:hover {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
-  background-color: var(--white);
-  color: var(--green);
-  font-family: var(--crimson-italic);
-  text-transform: capitalize;
-  font-size: 1.1em
+  position: absolute;
+  top: 100%;
+  display: none;
+  z-index: 3;
 }
 /* container dos patrocinadores */
 .sponsors {
