@@ -1,68 +1,180 @@
 @media (max-width: 1260px) {
-  .container-header { margin: 0 30px; }
-
-  .tips-container { grid-template-columns: 1fr; }
-
-  .posts-blog {
-    grid-template-columns: repeat(2, 1fr);
+  .container-header {
+    margin: 0 30px;
   }
-  /* mostra o 4º card quando o grid vira 2 colunas */
-  .post-card:nth-child(4) { display: block; }
 
-  .newsletter-inner {
-    grid-template-columns: 1fr;
-    gap: 30px;
+  .newsletter-image {
+    display: flex;
+    height: auto;
+    width: auto;
   }
-  .newsletter-image { display: none; }
+  .newsletter-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .footer-grid-top {
     flex-direction: column;
     padding: 40px 30px;
   }
-  .footer-grid { flex-wrap: wrap; gap: 30px; }
-  .footer-top { max-width: 100%; }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  .footer-top {
+    max-width: 100%;
+  }
+
+  .tip-card {
+    flex-direction: column !important;
+    align-items: center;
+  }
+  .post-content.left,
+  .post-content.right {
+    padding: 0;
+  }
+  .newsletter-form {
+    display: flex;
+    flex-direction: column !important;
+  }
+}
+@media (max-width: 1030px) {
+  .left-menu,
+  .right-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo.header img {
+    width: 70px;
+    height: 50px;
+  }
 }
 
-/* ---- Mobile ---- */
-@media (max-width: 768px) {
-  .container-header { margin: 0 16px; }
+@media (max-width: 1024px) {
+  .container-header {
+    margin: 0 20px;
+  }
 
-  /* oculta menus e contatos em mobile */
+  .slider-hero,
+  .container-hero {
+    margin: 0 20px;
+  }
+
+  .header-bottom {
+    height: auto;
+    padding: 12px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2em;
+  }
+
+  .newsletter-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px 30px;
+  }
+
+  .sponsor {
+    margin-left: 30px;
+  }
+
+  .tip-card {
+    margin: 20px 0;
+  }
+  .post-image-blog {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 950px) {
+  .container-menu-mobile {
+    display: flex;
+  }
+  .btn-menu-mobile {
+    display: flex;
+  }
+  .nav-destination-list,
+  .nav-search {
+    display: none;
+  }
+
   .left-menu,
   .right-menu,
-  .header-contacts { display: none; }
+  .header-contacts,
+  .header-bottom,
+  .header-top {
+    display: none;
+  }
+}
+/* ---- mobile ---- */
+@media (max-width: 768px) {
+  .container-header {
+    margin: 0 16px;
+  }
 
-  .header-bottom { height: auto; padding: 16px 0; }
+  .slider-hero {
+    margin: 0 16px;
+  }
+  .hero-content h1 {
+    font-size: 1.6em;
+  }
+  .description-content {
+    flex-direction: column;
+    gap: 6px;
+  }
 
-  .slider-hero { margin: 0 16px; }
-  .hero-content h1 { font-size: 1.6rem; }
-  .description-content { flex-direction: column; gap: 6px; }
-
-  /* sponsors empilhados em 2 colunas */
-  .sponsors { flex-wrap: wrap; }
+  .sponsors {
+    flex-wrap: wrap;
+  }
   .sponsor {
     flex: 0 0 50%;
-    border-right: none;
+    margin-left: 0;
     border-bottom: 1px solid #e8e8e8;
     height: 70px;
   }
 
-  /* tips: cards em coluna, imagem full-width */
-  .tips-container { grid-template-columns: 1fr; }
-  .tip-card { flex-direction: column !important; }
-  .post-image-blog { width: 100%; height: 200px; }
+  .tips-container {
+    grid-template-columns: 1fr;
+  }
+  .tip-card {
+    flex-direction: column !important;
+  }
+  .post-image-blog {
+    width: 100%;
+    height: auto;
+  }
 
-  /* newsletter: form em coluna */
-  .newsletter-form { flex-direction: column; }
-  .newsletter-form input { width: 100%; }
+  .newsletter-form input {
+    width: 100%;
+  }
 
-  /* posts: 1 coluna */
-  .posts-blog { grid-template-columns: 1fr; }
-  .post-card:nth-child(4) { display: block; }
+  .posts-blog {
+    display: flex;
+    flex-direction: column !important;
+  }
 
-  /* footer: tudo em coluna */
-  .footer-grid-top { padding: 30px 20px; gap: 30px; }
-  .footer-grid { flex-direction: column; gap: 24px; }
+  .footer.logo img {
+    height: auto;
+    width: auto;
+  }
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+  }
+  .footer-grid-top {
+    padding: 30px 20px;
+    gap: 30px;
+  }
   .footer-bottom {
     flex-direction: column;
     gap: 10px;
@@ -70,6 +182,10 @@
     padding: 14px 20px;
   }
 
-  .container { padding: 0 20px; }
-  .section { padding: 50px 0; }
+  .container {
+    padding: 0 20px;
+  }
+  .section {
+    padding: 50px 0;
+  }
 }
