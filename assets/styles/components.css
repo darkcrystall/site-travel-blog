@@ -13,13 +13,14 @@
   margin-bottom: 14px;
 }
 /* título dos links sociais */
-.header-socials h2, .footer-socials h2 {
+.header-socials h2,
+.footer-socials h2 {
   display: inline;
   font-family: var(--crimson-italic);
   font-size: 0.9em;
 }
 /* margens dos contatos */
-.header-contacts a { 
+.header-contacts a {
   font-size: inherit;
   margin: 0 10px;
 }
@@ -38,7 +39,8 @@
   margin: 0 0 0 5px;
 }
 /* textos do cabeçalho de baixo */
-nav .nav-link, .header-bottom span {
+nav .nav-link,
+.header-bottom span {
   font-size: 1.2em;
 }
 /* links do nav */
@@ -48,11 +50,12 @@ nav .nav-link, .header-bottom span {
   transition: color 1s ease;
   position: relative;
 }
-.nav-link:hover { 
+.nav-link:hover {
   color: var(--green);
   background-color: var(--white);
 }
-.menu-item:hover .submenu, .submenu:hover {
+.menu-item:hover .submenu,
+.submenu:hover {
   display: flex;
   width: 160%;
   padding: 0.4em 0.6em;
@@ -83,6 +86,140 @@ nav .nav-link, .header-bottom span {
 .btn-header:hover { 
   opacity: 0.7;
 }
+/* menu mobile */
+.btn-menu-mobile {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.btn-menu-mobile span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--dark);
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+}
+
+/* animação do X ao abrir */
+.btn-menu-mobile.open span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.btn-menu-mobile.open span:nth-child(2) {
+  opacity: 0;
+}
+.btn-hamburger.open span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* --- menu mobile --- */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: min(320px, 85vw);
+  height: 100vh;
+  background-color: var(--white);
+  z-index: 100;
+  overflow-y: auto;
+  transition: right 0.35s ease;
+  padding: 1.5em;
+}
+.mobile-menu.open {
+  right: 0;
+}
+
+.mobile-menu-close {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  color: var(--dark);
+  font-size: 1.25em;
+  cursor: pointer;
+  margin-bottom: 1.5em;
+  padding: 0.25em;
+  transition: color 0.2s ease;
+}
+.mobile-menu-close:hover {
+  color: var(--green);
+}
+
+/* itens do menu mobile */
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-nav-item {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mobile-nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.875em 0;
+  font-family: var(--oswald-semibold);
+  text-transform: uppercase;
+  font-size: 0.875em;
+  letter-spacing: 0.08em;
+  color: var(--dark);
+  cursor: pointer;
+  transition: color 0.2s ease;
+  text-align: left;
+}
+.mobile-nav-link:hover {
+  color: var(--green);
+}
+
+.mobile-nav-link i {
+  font-size: 0.7em;
+  transition: transform 0.3s ease;
+}
+.mobile-nav-link.open i {
+  transform: rotate(180deg);
+}
+
+/* submenus do mobile */
+.mobile-submenu {
+  display: none;
+  flex-direction: column;
+  padding: 0 0 0.75em 1em;
+  gap: 0.5em;
+}
+.mobile-submenu.open {
+  display: flex;
+}
+
+.mobile-submenu li a {
+  font-family: var(--crimson-italic);
+  font-size: 1em;
+  color: var(--light-gray);
+  transition: color 0.2s ease;
+}
+.mobile-submenu li a:hover {
+  color: var(--green);
+}
+
+/* overlay */
+.mobile-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+.mobile-overlay.open {
+  display: block;
+}
+
 /* botões que ficam no rodapé */
 .btn-footer {
   transition: color 1s ease;
@@ -100,7 +237,9 @@ nav .nav-link, .header-bottom span {
   opacity: 0.8;
   padding: 5px 20px;
   cursor: pointer;
-  transition: background 1s ease, display 1s ease;
+  transition:
+    background 1s ease,
+    display 1s ease;
 }
 /* lógica de animação do botão: a imagem da seta muda de display */
 .btn-arrow:hover {
@@ -123,7 +262,9 @@ nav .nav-link, .header-bottom span {
   align-items: center;
   justify-content: center;
   padding: 10px 40px;
-  transition: background 1s ease, display 1s ease;
+  transition:
+    background 1s ease,
+    display 1s ease;
   cursor: pointer;
   width: fit-content;
 }
@@ -195,20 +336,24 @@ header li {
 /* meta do post (data + autor) */
 .post-meta {
   display: flex;
-  gap: 14px;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  margin-top: 0.2em;
+  gap: 0.3em;
   color: var(--gray);
 }
-.post-meta a, .post-meta i { 
-  margin-right: 4px; 
-  font-size: 0.9em; 
+.post-meta a,
+.post-meta i {
+  margin-right: 4px;
+  font-size: 0.9em;
 }
 /* lógica de animação dos links */
-.post-meta.text, .post-meta a { 
-  color: var(--gray); 
+.post-meta.text,
+.post-meta a {
+  color: var(--gray);
   transition: all 1s ease;
 }
-.post-meta a:hover, .post-meta.text:hover { 
+.post-meta a:hover,
+.post-meta.text:hover {
   color: var(--green);
 }
 .post-tag:hover {
@@ -254,12 +399,12 @@ header li {
   display: none;
 }
 /* imagens dos posts */
-.post-image-blog {
-  height: 300px;
-  width: 460px;
+.post-image-blog img {
+  height: 70%;
+  width: 80%;
 }
 /* imagens dos posts (carousel) */
-.post-image-carousel {
+.post-image-carousel img {
   height: 90%;
   width: 80%;
 }
@@ -271,16 +416,8 @@ header li {
 }
 /* imagem no container das notícias */
 .newsletter-image {
-  height: 300px;
-  max-width: 430px;
-  margin-left: 60px;
-}
-.newsletter-text .label {
-  font-family: var(--crimson-italic);
-  font-size: 0.85rem;
-  color: var(--gray);
-  display: block;
-  margin-bottom: 4px;
+  height: 70%;
+  width: 90%;
 }
 .section-title.newsletter {
   text-align: left;
@@ -292,11 +429,11 @@ header li {
   margin-bottom: 2em;
   max-width: 480px;
 }
-
 .newsletter-form {
   display: flex;
+  align-items: right;
+  flex-direction: column;
   gap: 12px;
-  align-items: flex-end;
 }
 .newsletter-form input {
   flex: 1;
@@ -306,7 +443,7 @@ header li {
   background: var(--white);
   font-family: var(--crimson-italic);
 }
-.newsletter-form input::placeholder { 
+.newsletter-form input::placeholder {
   color: var(--gray);
 }
 .blog-carousel .section-label {
@@ -327,19 +464,20 @@ header li {
 .post-tag img {
   display: inline-block;
   margin-right: 5px;
-  width: 24px; 
+  width: 24px;
   height: 24px;
 }
 .post-card {
   display: flex;
+  align-items: center;
 }
 .post-card a {
   max-width: inherit;
 }
-.post-card.left-img {
+.post-tag.left-img {
   left: 0;
 }
-.post-card.right-img {
+.post-tag.right-img {
   right: 0;
 }
 
@@ -389,8 +527,6 @@ header li {
   color: var(--off-white);
 }
 .footer-newsletter-form {
-  display: flex;
-  flex-direction: column;
   width: 50%;
 }
 .footer-newsletter-form input {

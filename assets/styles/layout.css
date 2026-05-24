@@ -3,7 +3,7 @@
   position: relative;
   height: 100vh;
   min-height: 32em;
-  background: url("../images/hero-background/background-1.jpg") center center / cover no-repeat;;
+  background: url("../images/hero-background/background-1.jpg") center center / cover no-repeat;
   display: flex;
   flex-direction: column;
 }
@@ -86,6 +86,14 @@
   margin: 0 60px;
   font-size: 1em;
 }
+.container-menu-mobile {
+  display: none;
+  justify-content: space-between;
+  background-color: var(--white);
+  height: auto;
+  width: 100vw;
+  padding: 2% 5%;
+}
 /* header de cima */
 .header-top {
   font-family: var(--crimson-italic);
@@ -152,18 +160,19 @@
 .newsletter-banner {
   display: flex;
   justify-content: center;
+  justify-content: center;
   position: relative;
   background-color: var(--beige);
 }
 .newsletter-inner {
   display: flex;
-  align-items: center;
   z-index: 2;
 }
 .newsletter-content {
   display: flex;
-  gap: 60px;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .newsletter-left,
 .newsletter-right {
@@ -180,11 +189,16 @@
   justify-content: center;
   align-items: center;
 }
-.posts-blog {
+.posts-container {
   display: flex;
-  justify-content: center;
-  flex-direction: row;
   align-items: center;
+  gap: 1em;
+}
+.posts-blog {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex: 1;
+  gap: 1em;
 }
 /* todo footer */
 footer {
@@ -204,7 +218,11 @@ footer {
   margin: 3em 3em;
   max-width: 50%;
 }
-
+.footer.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 3em;
+}
 /* footer parte de baixo */
 .footer-bottom {
   display: flex;
@@ -219,5 +237,5 @@ footer {
   font-size: 1.1em;
   min-height: 30vh;
   padding: 20px 40px;
-  gap: 40px;
+  gap: 2em;
 }
