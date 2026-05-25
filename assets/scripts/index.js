@@ -1,3 +1,29 @@
+// nav-search
+const navSearch = document.getElementById("nav-search");
+const iconSearch = document.getElementById("icon-search");
+const titleSearch = document.getElementById("title-search");
+
+navSearch?.addEventListener("click", () => {
+  navSearch.classList.add("open");
+  const input = navSearch.querySelector("input");
+  input?.focus();
+  titleSearch.style.display = "none";
+  iconSearch.style.hov
+});
+
+// fecha ao clicar fora
+document.addEventListener("click", (e) => {
+  if (!navSearch) return;
+  const clickedInside = navSearch.contains(e.target);
+  if (!clickedInside) {
+    navSearch.classList.remove("open");
+    Array.from(navSearch.children).forEach((item, index) => {
+    if (index != 2) { item.style.display = "flex"; }
+  });
+  }
+});
+
+
 /* menu mobile */
 const btnMobile  = document.getElementById("btn-menu-mobile");
 const mobileMenu    = document.getElementById("mobile-menu");

@@ -57,7 +57,7 @@ nav .nav-link,
 .menu-item:hover .submenu,
 .submenu:hover {
   display: flex;
-  width: 160%;
+  width: 10em;
   padding: 0.4em 0.6em;
   background-color: var(--white);
   color: var(--green);
@@ -312,6 +312,7 @@ header li {
 /* links de descrição (data e autor) */
 .description-link {
   font-family: var(--crimson-italic);
+  font-size: 1.1em;
   margin-bottom: 8px;
   /* cria uma linha abaixo do link */
   background-image: linear-gradient(currentColor, currentColor);
@@ -332,6 +333,34 @@ header li {
 .description-link.header-content .text:hover {
   color: var(--off-white);
   background-size: 100% 1px;
+}
+
+/* input hidden por padrão, abre ao clicar */
+.nav-search input {
+  width: 0;
+  padding: 0;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.nav-search.open input {
+  width: 7em;
+  opacity: 1;
+  border-left: 1px solid var(--white);
+  background: transparent;
+  padding: 0.5em 1em;
+  color: var(--white);
+  font-family: var(--muli-regular);
+  text-transform: none;
+}
+/* isso remove o "x" padrão que limpa o campo, criado automaticamente porque o campo é search */
+input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.nav-search input::placeholder {
+  font-family: inherit;
+  text-transform: capitalize;
+  color: var(--off-white)
 }
 /* meta do post (data + autor) */
 .post-meta {
